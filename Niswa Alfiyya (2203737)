@@ -26,7 +26,7 @@
         display: inline-block;
       }
 
-      input[type="button"] {
+      input[type="submit"] {
         background-color: #aa7804;
         color: white;
         padding: 12px 20px;
@@ -36,7 +36,7 @@
         float: right;
       }
 
-      input[type="button"]:hover {
+      input[type="submit"]:hover {
         background-color: #aa7804;
       }
 
@@ -102,12 +102,12 @@
 
         var total = hargaK + hargaU;
 
-        var hasilElement = document.getElementById("hasil");
-        hasilElement.innerHTML += "<p>Nama: " + nama + "</p>";
-        hasilElement.innerHTML += "<p>Alamat: " + alamatPemesan + "</p>";
-        hasilElement.innerHTML += "<p>Pesanan Jenis Kopi: " + jenisKopi + "</p>";
-        hasilElement.innerHTML += "<p>Ukuran: " + ukuran.value + "</p>";
-        hasilElement.innerHTML += "<p>Total: Rp " + total + "</p>";
+        var hasil = "Nama: " + nama + "\n";
+        hasil += "Alamat: " + alamatPemesan + "\n";
+        hasil += "Pesanan Jenis Kopi: " + jenisKopi + "\n";
+        hasil += "Ukuran: " + ukuran.value + "\n";
+        hasil += "Total: Rp " + total + "\n";
+        alert(hasil);
       }
     </script>
   </head>
@@ -170,7 +170,7 @@
         </div>
         <br />
         <div class="row">
-          <input type="button" onClick="tampilHasil()" value="Simpan" />
+          <input type="submit" onClick="tampilHasil()" value="Simpan" />
         </div>
       </form>
     </div>
